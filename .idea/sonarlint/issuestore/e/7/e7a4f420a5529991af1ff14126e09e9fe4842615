@@ -1,0 +1,13 @@
+
+L
+java:S3740"/Provide the parametrized type for this generic.(áşÔò8¦¿ãî‘2
+{
+java:S1488*"^Immediately return this expression instead of assigning it to the temporary variable "result".(ùÈª8è‹óî‘2
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Åò”©ıÿÿÿÿ8§¿ãî‘2
+7
+java:S1220""Move this file to a named package.8§¿ãî‘2
+G	java:S106"+Replace this use of System.out by a logger.(ú•îæ8­¿ãî‘2
+L	java:S106%"+Replace this use of System.out by a logger.(ëÊĞüÿÿÿÿÿ8±¿ãî‘2
+X	java:S125'"<This block of commented-out lines of code should be removed.(ŞÇÙæ8¬˜ıî‘2
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8Íºÿî‘2

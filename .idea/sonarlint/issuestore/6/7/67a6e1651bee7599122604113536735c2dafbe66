@@ -1,0 +1,15 @@
+
+r	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û õøúÿÿÿÿ8¡÷‚‡’2
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ş‰ã€ÿÿÿÿÿ8¢÷‚‡’2
+7
+java:S1220""Move this file to a named package.8¢÷‚‡’2
+G	java:S106"+Replace this use of System.out by a logger.(ÆŠ¼æ8Ôø‚‡’2
+C
+java:S11682"&Return an empty array instead of null.(¥¹ï8Öø‚‡’2
+j	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°Ì´™8Öø‚‡’2
+f
+java:S1854F"DRemove this useless assignment to local variable "totalMovingCount".(Œ¼¯—úÿÿÿÿ8Öø‚‡’2
+X	java:S125="<This block of commented-out lines of code should be removed.(Êşÿò8×ø‚‡’2
+X	java:S125B"<This block of commented-out lines of code should be removed.(Êşÿò8×ø‚‡’2
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8Øø‚‡’2
