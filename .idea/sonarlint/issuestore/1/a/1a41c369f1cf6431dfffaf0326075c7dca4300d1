@@ -1,0 +1,9 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(…¢øÿÿÿÿ8£»ë¥“2
+7
+java:S1220""Move this file to a named package.8£»ë¥“2
+X
+java:S3518";Make sure "sum" can't be zero before doing this modulation.(¯Áñ8½»ë¥“2
+L	java:S106"+Replace this use of System.out by a logger.(‹ÔØ‡ıÿÿÿÿ8À»ë¥“2
+E
+java:S1125"(Remove the unnecessary boolean literals.(¯Áñ8Ä»ë¥“2

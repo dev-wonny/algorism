@@ -1,0 +1,18 @@
+
+u	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(äÜ›Ô8¨ Ô’2
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(©Á¶İıÿÿÿÿ8Ëú™Ô’2
+7
+java:S1220""Move this file to a named package.8Ëú™Ô’2
+Y
+java:S25895"7Remove this expression which always evaluates to "true"(‡Îúûÿÿÿÿ8ØÎŸÔ’2
+Y
+java:S25895"7Remove this expression which always evaluates to "true"(‡Îúûÿÿÿÿ8á Ô’2
+l
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ñ©ïT8öú™Ô’2
+L	java:S106"+Replace this use of System.out by a logger.(‹ÔØ‡ıÿÿÿÿ8ùú™Ô’2
+l
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ñ©ïT8ùú™Ô’2
+V
+java:S1854'"9Remove this useless assignment to local variable "check".(ëµÎà8İÎŸÔ’2
+V
+java:S18540":Remove this useless assignment to local variable "check2".(ÛÊ•8å Ô’2

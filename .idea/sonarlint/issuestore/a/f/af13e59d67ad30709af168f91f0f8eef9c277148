@@ -1,0 +1,15 @@
+
+i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÊÑç8²éÂ’2
+7
+java:S1220""Move this file to a named package.8²éÂ’2
+l
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ñ©ïT8ÑéÂ’2
+L	java:S106"+Replace this use of System.out by a logger.(™“‹Üûÿÿÿÿ8ÒéÂ’2
+l
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ñ©ïT8ÓéÂ’2
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(¼š½à8ÓéÂ’2
+I
+java:S1125."'Remove the unnecessary boolean literal.(‘Çßùıÿÿÿÿ8ÕéÂ’2
+I
+java:S1125."'Remove the unnecessary boolean literal.(‘Çßùıÿÿÿÿ8ÕéÂ’2
