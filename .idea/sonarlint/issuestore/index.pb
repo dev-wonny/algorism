@@ -49,3 +49,7 @@ Z
 *src/main/202408/시소짝꿍4_해결2.java,e/1/e12c551bc5fb07694ffeb4b0024fe5c0b0de117e
 Q
 !src/main/202408/하샤드수.java,1/a/1a41c369f1cf6431dfffaf0326075c7dca4300d1
+Z
+*src/main/202408/두정수사이의합.java,3/8/38823d3585832acb985213103a2f775f58f2fc8f
+`
+0src/main/202408/서울에서김서방찾기.java,1/1/1178702e126c53a4b92a3c375bc57891e28da34d
