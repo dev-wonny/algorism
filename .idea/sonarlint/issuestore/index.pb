@@ -53,3 +53,7 @@ Z
 *src/main/202408/두정수사이의합.java,3/8/38823d3585832acb985213103a2f775f58f2fc8f
 `
 0src/main/202408/서울에서김서방찾기.java,1/1/1178702e126c53a4b92a3c375bc57891e28da34d
+c
+3src/main/202408/로또최고순와최저순위.java,3/f/3f28e28aa5f3eda20c265441a91953d8988b6e64
+N
+src/main/202408/A_Default.java,c/7/c7bc92a1966a113f2c4f4e756d0b8e203f830622
