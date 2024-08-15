@@ -57,3 +57,21 @@ c
 3src/main/202408/로또최고순와최저순위.java,3/f/3f28e28aa5f3eda20c265441a91953d8988b6e64
 N
 src/main/202408/A_Default.java,c/7/c7bc92a1966a113f2c4f4e756d0b8e203f830622
+T
+$src/main/202408/음양더하기.java,f/6/f6caad3c6ada38fed7c0fc534fd83ee05293ee12
+Q
+!src/main/202408/광물캐기.java,6/e/6e68e8acca06ec4b1f8a0249cf63dc16c5172f97
+R
+"src/main/202408/광물캐기2.java,4/6/46ad69982c231d64aaeeb1b18ae964be190ed367
+X
+(src/main/202408/광물캐기_정답.java,3/e/3e349ba9447f1f4cb525b9e9e841e78e8bf7c5eb
+Y
+)src/main/202408/광물캐기3_개선.java,2/d/2db6b66def2dd298dac13d806294319d18d632f6
+[
++src/main/202408/광물캐기_그리디.java,2/4/24e2cd2d5cf56f07a6afbdc5403eac13795b4b5c
+]
+-src/main/202408/혼자서하는틱택토.java,e/e/eef78dd9109dda4612ac13d42481758a615e6859
+_
+/src/main/202408/혼자서하는틱택토_2.java,0/8/089127362d16eba732ba7c6cc241400825f9875e
+_
+/src/main/202408/혼자서하는틱택토_3.java,8/0/809cb21ef3a99b56060d5bd853e78ad675efcbea

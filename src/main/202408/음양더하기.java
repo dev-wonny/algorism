@@ -1,4 +1,6 @@
-public class A_Default {
+public class 음양더하기 {
+
+	//https://school.programmers.co.kr/learn/courses/30/lessons/76501
 
 	public static void main(String[] args) {
 		Solution solution = new Solution();
