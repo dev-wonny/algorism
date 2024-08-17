@@ -1,0 +1,12 @@
+
+h	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ùÈI8•¼Úü•2
+X
+java:S1854";Remove this useless assignment to local variable "result2".(Ä¸ŞÌ8¢¼Úü•2
+L	java:S106"+Replace this use of System.out by a logger.(û£üùÿÿÿÿ8¦¼Úü•2
+I
+java:S1481",Remove this unused "result2" local variable.(Ä¸ŞÌ8§¼Úü•2
+G	java:S106""+Replace this use of System.out by a logger.(ÀŞ–Ä8•ØÜü•2
+y
+java:S2234-"WParameters to hanoi have the same names but not the same order as the method arguments.(Ø´çØøÿÿÿÿ8™ØÜü•2
+t
+java:S22340"WParameters to hanoi have the same names but not the same order as the method arguments.(ªÆ»Ğ8šØÜü•2

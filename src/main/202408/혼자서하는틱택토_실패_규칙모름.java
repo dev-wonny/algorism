@@ -1,4 +1,4 @@
-public class 혼자서하는틱택토 {
+public class 혼자서하는틱택토_실패_규칙모름 {
 
 //	https://school.programmers.co.kr/learn/courses/30/lessons/160585
 
@@ -53,8 +53,14 @@ public class 혼자서하는틱택토 {
 				return 0;// false
 			}
 
+			// X는 O보다 많을 수 없다.
+			if (XCount > OCount) {
+				return 0;
+			}
+
+			//test 10
 			// 체크1) O와 X의 숫자가 같은가? O는 X보다 1개 많아야한다
-			if (OCount - XCount >= 1) {
+			if (OCount - XCount > 1) {// >= 아님 >
 				return 0;// false
 			}
 
@@ -64,7 +70,7 @@ public class 혼자서하는틱택토 {
 			result += checkDiagonal(newBoard);
 
 			// 체크3) 게임이 끝났는데도 계속 진행하지 않는가?
-			if (result > 1) {
+			if (result > 2) {
 				return 0;// false
 			}
 

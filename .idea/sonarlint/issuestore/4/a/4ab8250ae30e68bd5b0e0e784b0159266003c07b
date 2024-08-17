@@ -3,9 +3,10 @@ k	java:S117"QRename this local variable to match the regular expression '^[a-
 f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ôş¸º
 f	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Íü§
 f	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÓòĞ
-g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ì¬¤«ùÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ã›ÂÉùÿÿÿÿ
 E	java:S106	"+Replace this use of System.out by a logger.(®ıáëûÿÿÿÿ
 h
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ä“×¸
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ä“×¸
+]	java:S125)"<This block of commented-out lines of code should be removed.(¶ÛÓˆıÿÿÿÿ8óÖñÉ•2
 W
 java:S1126]"AReplace this if-then-else statement by a single return statement.(“‚ ¢

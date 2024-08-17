@@ -3,8 +3,6 @@ e
 java:S1192
 "HDefine a constant instead of duplicating this literal "diamond" 5 times.(È³Îõ8Ý°‚ª•2
 i	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Ÿ—ðš8Þ°‚ª•2
-7
-java:S1220""Move this file to a named package.8Þ°‚ª•2
 L	java:S106"+Replace this use of System.out by a logger.(ŒÅë†þÿÿÿÿ8Ö±‚ª•2
 o
 java:S3776"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(èÎÐ«8×±‚ª•2

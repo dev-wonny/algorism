@@ -1,0 +1,11 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(«´¬‰ıÿÿÿÿ8ÛÙ€û•2
+X
+java:S1854";Remove this useless assignment to local variable "result2".(Ä¸ŞÌ8æÙ€û•2
+L	java:S106"+Replace this use of System.out by a logger.(û£üùÿÿÿÿ8çÙ€û•2
+I
+java:S1481",Remove this unused "result2" local variable.(Ä¸ŞÌ8èÙ€û•2
+~
+java:S2234%"\Parameters to solveHanoi have the same names but not the same order as the method arguments.(ïÅÎ•úÿÿÿÿ8ìÙ€û•2
+y
+java:S2234+"\Parameters to solveHanoi have the same names but not the same order as the method arguments.(šÍÔÖ8íÙ€û•2
