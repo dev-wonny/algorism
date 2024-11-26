@@ -9,11 +9,15 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/202408" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/202411" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/25" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/26" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/27" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/28" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/29" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/template" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-  <component name="SonarLintModuleSettings">
-    <option name="uniqueId" value="ba9ecc06-1716-4d1d-a446-7e324e207876" />
   </component>
 </module>
