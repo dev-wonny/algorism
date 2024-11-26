@@ -42,7 +42,7 @@ public class 게임최단거리 {
         // [[1,0,1,1,1],[1,0,1,0,1],[1,0,1,1,1],[1,1,1,0,1],[0,0,0,0,1]]
         int[][] maps = way.make();
         int result = solution.solution(maps);// 11
-        System.out.println("예상 결과(11), 실제 값: " + result);
+        System.out.println("예상 결과(11), 실제 값:" + result);
 
         System.out.println();
         System.out.println();
@@ -50,7 +50,7 @@ public class 게임최단거리 {
         // [[1,0,1,1,1],[1,0,1,0,1],[1,0,1,1,1],[1,1,1,0,0],[0,0,0,0,1]]
         int[][] maps2 = way.failMake();
         int result2 = solution.solution(maps2);// -1
-        System.out.println("예상 결과(-1), 실제 값: " + result2);
+        System.out.println("예상 결과(-1), 실제 값:" + result2);
 
 
     }
@@ -60,7 +60,7 @@ public class 게임최단거리 {
             // 최단 경로를 찾아야하기때문에 BFS
 
             // DFS, BFS는 처음 시작점을 호출해야함
-            Point start = new Point(0, 0);
+            Point start = new Point(0, 0, 1);
             Point end = new Point(maps.length, maps[0].length);
 
             //출발에서 출구까지의 최단거리
@@ -70,11 +70,10 @@ public class 게임최단거리 {
 
         public int bfs(int[][] maps, Point start, Point end) {
             //상하좌우 이동
-            int[][] directionTool = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+            final int[][] directionTool = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
             //공통 변수
             boolean[][] visited = new boolean[end.x][end.y];
-            int totalDistance = 0;
 
             // queue를 사용하니까
             Queue<Point> queue = new LinkedList<>();
@@ -83,22 +82,23 @@ public class 게임최단거리 {
             queue.add(start);
             visited[start.x][start.y] = true;
 
+            // 진짜 로직 시작
             while (!queue.isEmpty()) {
                 Point current = queue.poll();
 
                 // 종료: end에 도착하면 멈춘다
                 if (current.x == end.x - 1 && current.y == end.y - 1) {
-                    System.out.println("종료 Point(" + (current.x + 1) + ", " + (current.y + 1) + "), maps 값: " + maps[current.x][current.y] + ", 방문 여부: " + visited[current.x][current.y]);
+                    System.out.println(
+                        "-----> 종료 Point(" + (current.x + 1) + ", " + (current.y + 1) + "), maps 값:" + maps[current.x][current.y] + ", 방문 여부:" + visited[current.x][current.y] + ", 누적 길이:" +
+                            current.distance);
 
-                    return totalDistance;
+                    return current.distance;
                 }
 
                 // 다음에 이동할 곳이 있는지 탐색 후 queue에 넣음
                 for (int[] direction : directionTool) {
                     int nx = current.x + direction[0];
                     int ny = current.y + direction[1];
-
-//                    System.out.println("현재 위치 Point(" + nx + ", " + ny + "), maps 값: " + maps[nx][ny] + "방문 여부: " + visited[nx][ny]);
 
                     if (
                         nx >= 0
@@ -110,15 +110,13 @@ public class 게임최단거리 {
                             // 방문한곳이 아닐때
                             && !visited[nx][ny]
                     ) {
-                        // 반복: queue에 넣고, 방문체크
-                        System.out.println("추가 Point(" + (nx + 1) + ", " + (ny + 1) + "), maps 값: " + maps[nx][ny] + ", 방문 여부: " + visited[nx][ny]);
-                        queue.add(new Point(nx, ny));
+                        // 반복: queue에 넣고, 방문체크, 다음 Point Distance 증가
+                        System.out.println("추가 Point(" + (nx + 1) + ", " + (ny + 1) + "), maps 값:" + maps[nx][ny] + ", 방문 여부:" + visited[nx][ny] + ", Next Point 누적 길이:" + (current.distance + 1));
+                        queue.add(new Point(nx, ny, current.distance + 1));
                         visited[nx][ny] = true;
                     }
                 }
 
-                // totalDistance 증가
-                totalDistance++;
             }// while end
 
             // 도달 할 수 없는 경우
@@ -128,7 +126,14 @@ public class 게임최단거리 {
 
 
     static class Point {
-        int x, y;
+        private int x, y;
+        private int distance;
+
+        public Point(int x, int y, int distance) {
+            this.x = x;
+            this.y = y;
+            this.distance = distance;
+        }
 
         public Point(int x, int y) {
             this.x = x;
