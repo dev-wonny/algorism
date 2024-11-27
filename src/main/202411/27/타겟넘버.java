@@ -48,35 +48,39 @@ public class 타겟넘버 {
     static class Solution {
         public int solution(int[] numbers, int target) {
             int result = 0;
-
-            return result;
+            return DFS(numbers, target, result, 0, 0);
         }
 
         // 끝까지 가서 더해서 올라오고, 마지막에 값이 target과 같다면 카운트 올리자
         // 재귀를 사용하자
 
-        public int DFS(int[] numbers, int currentIndex, int accumulateNum, int target, int result) {
-
+        public int DFS(int[] numbers, int target, int result, int currentIndex, int accumulateNum) {
             // 브레이크 포인트
             if (numbers.length == currentIndex + 1) {
-//                다 더했네 그러면 target 값과 같은지 비교하자
-                accumulateNum += numbers[currentIndex];
-                if (accumulateNum == target) {
-                    result += 1;
-                }
-
+                return numbers[currentIndex];//현재값
             }
 
             // 마지막 아니면 계속 더해주고 다음으로 재귀해줄래?
-            accumulateNum += numbers[currentIndex];//현재값
-            accumulateNum += DFS();
+            // 부호 바꿔주는 부분
+            int newAccum1 = accumulateNum + DFS(numbers, target, result, currentIndex + 1, accumulateNum);
+            int newAccum2 = accumulateNum - DFS(numbers, target, result, currentIndex + 1, accumulateNum);
+            System.out.println("currentIndex:" + currentIndex + ", newAccum1:" + newAccum1 + ", newAccum2:" + newAccum2);
 
 
+            // 타겟값이 같다면 카운트 올리자
+            if (currentIndex == 0) {
+                System.out.println(">>>>> currentIndex:" + currentIndex + ", newAccum1:" + newAccum1 + ", newAccum2:" + newAccum2);
+                if (newAccum1 == target) {
+                    result += 1;
+                }
+
+                if (newAccum2 == target) {
+                    result += 1;
+                }
+            }
             return 0;
-        }
-
-
-    }// Solution class end
+        }// Solution class end
+    }
 
     static class 배열을생성하는여러가지방법 {
         public int[] make() {
