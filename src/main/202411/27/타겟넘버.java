@@ -48,38 +48,31 @@ public class 타겟넘버 {
     static class Solution {
         public int solution(int[] numbers, int target) {
             int result = 0;
-            return DFS(numbers, target, result, 0, 0);
+            return DFS(numbers, target, result, 0);
         }
 
         // 끝까지 가서 더해서 올라오고, 마지막에 값이 target과 같다면 카운트 올리자
         // 재귀를 사용하자
 
-        public int DFS(int[] numbers, int target, int result, int currentIndex, int accumulateNum) {
+        public int DFS(int[] numbers, int target, int sum, int currentIndex) {
             // 브레이크 포인트
-            if (numbers.length == currentIndex + 1) {
-                return numbers[currentIndex];//현재값
+            if (numbers.length == currentIndex) {
+                return (sum == target) ? 1 : 0;
             }
 
             // 마지막 아니면 계속 더해주고 다음으로 재귀해줄래?
             // 부호 바꿔주는 부분
-            int newAccum1 = accumulateNum + DFS(numbers, target, result, currentIndex + 1, accumulateNum);
-            int newAccum2 = accumulateNum - DFS(numbers, target, result, currentIndex + 1, accumulateNum);
-            System.out.println("currentIndex:" + currentIndex + ", newAccum1:" + newAccum1 + ", newAccum2:" + newAccum2);
+            // 현재 숫자를 더하거나 뺀 두 가지 경우로 재귀 호출
+            int add = DFS(numbers, target, sum + numbers[currentIndex], currentIndex + 1);
+            int subtract = DFS(numbers, target, sum - numbers[currentIndex], currentIndex + 1);
+            System.out.println("currentIndex:" + currentIndex + ", add:" + add + ", subtract:" + subtract);
 
 
-            // 타겟값이 같다면 카운트 올리자
-            if (currentIndex == 0) {
-                System.out.println(">>>>> currentIndex:" + currentIndex + ", newAccum1:" + newAccum1 + ", newAccum2:" + newAccum2);
-                if (newAccum1 == target) {
-                    result += 1;
-                }
-
-                if (newAccum2 == target) {
-                    result += 1;
-                }
-            }
-            return 0;
+            // 재귀적으로 탐색한 두 가지 경우의 수를 합산
+            return add + subtract;
         }// Solution class end
+
+
     }
 
     static class 배열을생성하는여러가지방법 {
