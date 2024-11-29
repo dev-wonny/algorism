@@ -49,9 +49,10 @@ public class 네트워크2 {
                 System.out.println("for문 i:" + i + ",  nodeVisited:" + Arrays.toString(nodeVisited));
 
                 if (!nodeVisited[i]) {
+                    nodeVisited[i] = true;
                     networkCount++;
                     System.out.println("DFS 호출");
-                    DFS(computers, i, 0, nodeVisited);
+                    DFS(computers, i, nodeVisited);
                 }
             }
 
@@ -59,16 +60,16 @@ public class 네트워크2 {
             return networkCount;
         }
 
-        public void DFS(int[][] computers, int startNode, int next, boolean[] nodeVisited) {
+        public void DFS(int[][] computers, int startNode, boolean[] nodeVisited) {
             System.out.println("깊이:" + startNode);
             System.out.println("->".repeat(startNode) + "DFS for문 시작 전");
-            for (int j = next; j < computers[startNode].length; j++) {
+            for (int j = 0; j < computers[startNode].length; j++) {
                 System.out.println("->".repeat(startNode) + "DFS for문 시작");
                 //브레이크 포인트
                 System.out.println("->".repeat(startNode) + "[입장] " + startNode + ", " + j + ": nodeVisited: " + nodeVisited[j] + ", 값: " + computers[startNode][j]);
 
                 // 반복 작업 -> 새로운 곳이면 마킹한다
-                if (computers[startNode][j] == 1 && !nodeVisited[j]) {
+                if (computers[startNode][j] == 1 && !nodeVisited[j] && startNode != j) {
                     nodeVisited[j] = true;
                     System.out.println("->".repeat(startNode) + "[변경] " + startNode + ", " + j + ": nodeVisited: " + nodeVisited[j]);
                     // 더 땅꿀파야함 -> 네트워킹 적용 1-> 2를 연결해야함
@@ -78,7 +79,7 @@ public class 네트워크2 {
 //                    입장-> 1, 2: nodeVisited: false, 값: 1  이걸로
 
 //                    DFS(computers, startNode, j, nodeVisited);
-                    DFS(computers, j, j + 1, nodeVisited);
+                    DFS(computers, j, nodeVisited);
                 }
 
                 //연결안됐으면 마킹 그대로 false로 둔다
