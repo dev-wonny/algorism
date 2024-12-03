@@ -8,6 +8,9 @@ import java.util.Arrays;
  * i와 j가 연결되어있으면 값 1
  * <p>
  * https://school.programmers.co.kr/learn/courses/30/lessons/43162
+ *
+ * 애는 끝까지 가기만하고 리턴이 없음
+ * 숫자를 세는건 바깥에서 함
  */
 public class 네트워크2 {
     public static void main(String[] args) {
@@ -48,6 +51,7 @@ public class 네트워크2 {
                 //브레이크 포인트
                 System.out.println("for문 i:" + i + ",  nodeVisited:" + Arrays.toString(nodeVisited));
 
+                //숫자를 세는 로직
                 if (!nodeVisited[i]) {
                     nodeVisited[i] = true;
                     networkCount++;
@@ -61,6 +65,8 @@ public class 네트워크2 {
         }
 
         public void DFS(int[][] computers, int startNode, boolean[] nodeVisited) {
+            // 리턴은 없다
+            // 연결된 것들을 끝까지 파고들어가서 영역체크만 함
             System.out.println("깊이:" + startNode);
             System.out.println("->".repeat(startNode) + "DFS for문 시작 전");
             for (int j = 0; j < computers[startNode].length; j++) {
@@ -89,7 +95,7 @@ public class 네트워크2 {
 
             System.out.println("깊이:" + startNode + "DFS for문 종료");
             System.out.println();
-        }
+        }//DFS end
 
 
     }
