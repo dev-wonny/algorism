@@ -83,6 +83,7 @@ public class 게임최단거리 {
             visited[start.x][start.y] = true;
 
             // 진짜 로직 시작
+            // queue 비울때까지 끝까지 팝니다
             while (!queue.isEmpty()) {
                 Point current = queue.poll();
 
