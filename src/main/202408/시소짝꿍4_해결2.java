@@ -28,7 +28,7 @@ public class 시소짝꿍4_해결2 {
 				int weight1 = entry.getKey();
 				long count1 = entry.getValue();
 
-				// 동일한 무게의 조합 수를 계산 (kC2)
+				// 동일한 무게의  수를 계산 (kC2)
 				totalCount += (count1 * (count1 - 1)) / 2;
 
 				// 다른 무게와의 조합을 검사
