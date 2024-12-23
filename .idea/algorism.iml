@@ -25,6 +25,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/202412/16" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/202412/17" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/202412/19" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/23" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/collection" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/collection/array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/collection/link" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
