@@ -1,3 +1,5 @@
+package collection.link;
+
 public class MyLinkedList<E> {
     private Node<E> first;
     private int size = 0;
@@ -86,7 +88,7 @@ public class MyLinkedList<E> {
 
     @Override
     public String toString() {
-        return "MyLinkedList{" +
+        return "collection.link.MyLinkedList{" +
             "first=" + first +
             ", size=" + size +
             '}';

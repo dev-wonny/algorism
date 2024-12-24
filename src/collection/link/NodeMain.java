@@ -1,3 +1,5 @@
+package collection.link;
+
 public class NodeMain {
     public static void main(String[] args) {
         //노드 생성하고 연결하기: A -> B -> C

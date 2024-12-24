@@ -1,8 +1,10 @@
+package collection.array;
+
 public class ArrayListMain {
 
     public static void main(String[] args) {
 
-        MyArrayList<String> list = new MyArrayList<>();
+        array.MyArrayList<String> list = new array.MyArrayList<>();
 
         //마지막에 추가 //O(1)
         list.add("a");
@@ -21,7 +23,7 @@ public class ArrayListMain {
 
         //삭제
         Object removed1 = list.remove(4);//remove Last O(1)
-        System.out.println("remove(4)="+ removed1);
+        System.out.println("remove(4)=" + removed1);
         System.out.println(list);
 
         Object removed2 = list.remove(0);//remove First O(n)

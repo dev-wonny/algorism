@@ -1,3 +1,5 @@
+package collection.link;
+
 public class MyLinkedListMain {
 
     public static void main(String[] args) {
