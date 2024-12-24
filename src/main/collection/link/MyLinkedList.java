@@ -45,28 +45,13 @@ public class MyLinkedList<E> {
         return c.item;
     }
 
-
-    public Node<E> getNode(int idx) {
+    // 내부용
+    private Node<E> getNode(int idx) {
         Node<E> c = first;
         for (int i = 0; i < idx; i++) {
             c = c.next;
         }
         return c;
-    }
-
-    public int size() {
-        return size;
-    }
-
-    public int indexOf(E o) {
-        int index = 0;
-        for (Node<E> x = first; x != null; x = x.next) {
-            if (o.equals(x.item)) {
-                return index;
-            }
-            index++;
-        }
-        return -1;
     }
 
     public E remove(int i) {
@@ -84,6 +69,20 @@ public class MyLinkedList<E> {
         return removeItem;
     }
 
+    public int indexOf(E o) {
+        int index = 0;
+        for (Node<E> x = first; x != null; x = x.next) {
+            if (o.equals(x.item)) {
+                return index;
+            }
+            index++;
+        }
+        return -1;
+    }
+
+    public int size() {
+        return size;
+    }
 
     @Override
     public String toString() {
@@ -117,6 +116,4 @@ public class MyLinkedList<E> {
             return sb.toString();
         }
     }
-
-
 }
