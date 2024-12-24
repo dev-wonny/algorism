@@ -78,13 +78,13 @@ public class MyArrayList<E> {
         return (E) objectData[index];
     }
 
-    public E set(int index, Object data) {
+    public E set(int index, E element) {
         E oldValue = get(index);
-        objectData[index] = data;
+        objectData[index] = element;
         return oldValue;
     }
 
-    public int indexOf(Object o) {
+    public int indexOf(E o) {
         for (int i = 0; i < size; i++) {
             if (o.equals(objectData[i])) {
                 return i;

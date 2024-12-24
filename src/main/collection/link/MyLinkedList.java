@@ -13,12 +13,12 @@ public class MyLinkedList<E> {
         size++;
     }
 
-    public void add(int i, E e) {
+    public void add(int index, E e) {
         Node<E> newNode = new Node<>(e);
         if (first == null) {
             first = newNode;
         } else {
-            Node<E> x = getNode(i - 1);
+            Node<E> x = getNode(index - 1);
             newNode.next = x.next;
             x.next = newNode;
         }
@@ -54,13 +54,13 @@ public class MyLinkedList<E> {
         return c;
     }
 
-    public E remove(int i) {
-        Node<E> c = getNode(i);
+    public E remove(int index) {
+        Node<E> c = getNode(index);
         E removeItem = c.item;
-        if (i == 0) {
+        if (index == 0) {
             first = c.next;
         } else {
-            Node<E> x = getNode(i - 1);
+            Node<E> x = getNode(index - 1);
             x.next = c.next;
         }
         c.item = null;

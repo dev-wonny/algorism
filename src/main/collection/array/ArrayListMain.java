@@ -2,7 +2,7 @@ public class ArrayListMain {
 
     public static void main(String[] args) {
 
-        MyArrayList list = new MyArrayList<>();
+        MyArrayList<String> list = new MyArrayList<>();
 
         //마지막에 추가 //O(1)
         list.add("a");
