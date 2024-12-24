@@ -7,28 +7,10 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202408" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202411" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/25" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/26" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/27" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/28" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202411/29" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/template" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/04" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/06" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/10" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/12" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/13" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/16" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/17" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/19" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/23" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/collection" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/collection/array" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/collection/link" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/202412/24" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/collection/list" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
