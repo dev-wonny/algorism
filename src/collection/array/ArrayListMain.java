@@ -4,7 +4,7 @@ public class ArrayListMain {
 
     public static void main(String[] args) {
 
-        array.MyArrayList<String> list = new array.MyArrayList<>();
+        MyArrayList<String> list = new MyArrayList<>();
 
         //마지막에 추가 //O(1)
         list.add("a");
