@@ -1,6 +1,31 @@
 package collection.list;
 
 public class MyLinkedList<E> implements MyList<E> {
+    private static class Node<E> {
+        E item;
+        Node<E> next;
+
+        public Node(E item) {
+            this.item = item;
+        }
+
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder();
+            Node<E> temp = this;
+            sb.append("[");
+            while (temp != null) {
+                sb.append(temp.item);
+                if (temp.next != null) {
+                    sb.append("->");
+                }
+                temp = temp.next;
+            }
+            sb.append("]");
+            return sb.toString();
+        }
+    }
+
     private Node<E> first;
     private int size = 0;
 
@@ -101,28 +126,5 @@ public class MyLinkedList<E> implements MyList<E> {
             '}';
     }
 
-    private static class Node<E> {
-        E item;
-        Node<E> next;
 
-        public Node(E item) {
-            this.item = item;
-        }
-
-        @Override
-        public String toString() {
-            StringBuilder sb = new StringBuilder();
-            Node<E> temp = this;
-            sb.append("[");
-            while (temp != null) {
-                sb.append(temp.item);
-                if (temp.next != null) {
-                    sb.append("->");
-                }
-                temp = temp.next;
-            }
-            sb.append("]");
-            return sb.toString();
-        }
-    }
 }

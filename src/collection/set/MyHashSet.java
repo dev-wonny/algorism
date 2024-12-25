@@ -44,6 +44,7 @@ public class MyHashSet<E> implements MySet<E> {
     }
 
     // 추가
+    @Override
     public boolean add(E value) {
         int hashIndex = hashIndex(value);
         // 중복 체크후 저장
@@ -64,6 +65,7 @@ public class MyHashSet<E> implements MySet<E> {
     }
 
     // 탐색
+    @Override
     public boolean contains(E value) {// 과거에 O(N) -> 평균적으로 1,2개 들어있어서 O(1)
         int hashIndex = hashIndex(value);
         LinkedList<E> bucket = buckets[hashIndex];//O(1)
@@ -71,6 +73,7 @@ public class MyHashSet<E> implements MySet<E> {
     }
 
     // 삭제
+    @Override
     public boolean remove(E value) {
         int hashIndex = hashIndex(value);
         LinkedList<E> bucket = buckets[hashIndex];

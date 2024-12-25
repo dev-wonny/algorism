@@ -12,5 +12,13 @@ public class MyListMain {
         //return ImmutableCollections.listFromTrustedArray(e1, e2, e3);
         List<Integer> list2 = List.of(1, 2, 3);
 
+
+        MyLinkedList<Integer> integerMyLinkedList = new MyLinkedList<>();
+        integerMyLinkedList.add(1);
+        integerMyLinkedList.add(2);
+        integerMyLinkedList.add(3);
+        integerMyLinkedList.add(4);
+        System.out.println(integerMyLinkedList);
+
     }
 }
