@@ -33,6 +33,16 @@ public class LeafSimilarTrees {
 
     }
 
+    public static class State {
+        TreeNode node;
+        int max;
+
+        public State(TreeNode node, int max) {
+            this.node = node;
+            this.max = max;
+        }
+    }
+
     public static class TreeNode {
         Integer val;
         TreeNode left;
