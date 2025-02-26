@@ -75,7 +75,7 @@ public class 연구소 {
         int h = map.length;
         int w = map[0].length;
 
-        // 벽을 세울 수 있는 모든 위치 탐색
+        // 벽을 세울 수 있는 모든 위치 탐색 -> 조합으로 변경
         for (int y = 0; y < h; y++) {
             for (int x = 0; x < w; x++) {
                 if (map[y][x] == 0) { // 빈 공간
