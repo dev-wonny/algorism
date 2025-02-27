@@ -39,18 +39,12 @@ public class NumberofIslands_DFS_Stack_DataStructure {
      * DFS도 가능하다 그러나 O(N*M)
      * BFS는 O(min(N,M))으로 BFS가 시간복잡도가 빠르다
      */
-    public static int numIslands(char[][] grid) {
+    private static int numIslands(char[][] grid) {
         int X = grid.length;
         int Y = grid[0].length;
         // 그래프는 있음
         // 방문 기록
         boolean[][] visited = new boolean[X][Y];
-
-        // dfs로 그래프 탐색
-
-        // 스택 사용
-        // 재귀함수
-        // 스택 자료구조
 
         //전체 for문 카운트 세기
         int islandCount = 0;
