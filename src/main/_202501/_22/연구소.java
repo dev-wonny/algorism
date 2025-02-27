@@ -58,7 +58,7 @@ public class 연구소 {
     private static int maxSafeArea = 0; // 최대 안전 영역
 
 
-    public static int BFS(int[][] grid) {
+    private static int BFS(int[][] grid) {
         maxSafeArea = 0; // 최대 안전 영역 초기화
         buildWall(grid, 0);
         return maxSafeArea;
