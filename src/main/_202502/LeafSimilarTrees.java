@@ -43,10 +43,19 @@ public class LeafSimilarTrees {
         }
     }
 
+    public static void printDoubleLinkedList(List<List<Integer>> result) {
+        for (List<Integer> rowList : result) {
+            for (Integer col : rowList) {
+                System.out.print(col + ", ");
+            }
+            System.out.println();
+        }
+    }
+
     public static class TreeNode {
-        Integer val;
-        TreeNode left;
-        TreeNode right;
+        public Integer val;
+        public TreeNode left;
+        public TreeNode right;
 
         TreeNode() {
         }
