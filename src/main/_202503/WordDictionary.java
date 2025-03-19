@@ -22,7 +22,7 @@ public class WordDictionary {
     // words length >=25
 
     private class TrieNode {
-        Map<Character, TrieNode> children;
+        Map<Character, TrieNode> children;//using Map
         boolean isEnd;
 
         TrieNode() {
@@ -34,11 +34,11 @@ public class WordDictionary {
     private final TrieNode root;
 
 
-    public WordDictionary() {
+    private WordDictionary() {
         root = new TrieNode();
     }
 
-    public void addWord(String word) {
+    private void addWord(String word) {
         TrieNode node = root;
         for (char ch : word.toCharArray()) {
             node.children.putIfAbsent(ch, new TrieNode());
@@ -47,7 +47,7 @@ public class WordDictionary {
         node.isEnd = true;
     }
 
-    public boolean search(String word) {
+    private boolean search(String word) {
         return searchRecursive(word, 0, root);
     }
 

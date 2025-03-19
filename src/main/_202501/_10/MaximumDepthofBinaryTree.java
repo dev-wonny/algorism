@@ -2,7 +2,7 @@ package main._202501._10;
 
 //https://leetcode.com/problems/maximum-depth-of-binary-tree/description/?envType=study-plan-v2&envId=leetcode-75
 public class MaximumDepthofBinaryTree {
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;

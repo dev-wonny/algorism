@@ -16,7 +16,7 @@ public class MaximumDepthOfBinaryTree {
     }
 
 
-    public static class TreeNode {
+    private static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -36,7 +36,7 @@ public class MaximumDepthOfBinaryTree {
     }
 
     // dfs
-    public static int maxDepth(TreeNode root) {
+    private static int maxDepth(TreeNode root) {
         if (root == null) {
             return 0;
         }
@@ -44,7 +44,7 @@ public class MaximumDepthOfBinaryTree {
         return dfs(root, depth);
     }
 
-    public static int dfs(TreeNode cur, int dept) {
+    private static int dfs(TreeNode cur, int dept) {
         int left = 0, right = 0;
         if (cur.left != null) {
             left = dfs(cur.left, dept + 1);
