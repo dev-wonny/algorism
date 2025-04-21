@@ -102,7 +102,7 @@ public class 네트워크2 {
 
     }
 
-    static class 이중배열생성 {
+    public static class 이중배열생성 {
         public int[][] make1() {
             int[][] arr = new int[3][3];
             arr[0] = new int[] {1, 1, 0};
