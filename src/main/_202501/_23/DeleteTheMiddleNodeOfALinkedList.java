@@ -2,6 +2,8 @@ package main._202501._23;
 
 import static java.lang.System.out;
 
+import main.ListNode;
+
 import java.util.function.Supplier;
 
 //https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/?envType=study-plan-v2&envId=leetcode-75
@@ -70,35 +72,6 @@ public class DeleteTheMiddleNodeOfALinkedList {
             prevNode = curNode;
         }
         return head;
-    }
-
-
-    // 주어진 조건
-    public static class ListNode {
-        private int val;
-        private ListNode next;
-
-        // 나라면 여기에 size넣음
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            return "ListNode{" +
-                "val=" + val +
-                ", next=" + next +
-                '}';
-        }
     }
 
 
