@@ -1,4 +1,4 @@
-package main._202501._05;
+package main._202504.순열;
 
 import java.util.ArrayList;
 import java.util.List;
